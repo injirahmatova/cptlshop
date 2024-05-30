@@ -1,0 +1,1329 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header .headerTop {
+  width: 85%;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .headerTop .aboutUs {
+  width: 22%;
+}
+header .headerTop .aboutUs ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .headerTop .aboutUs ul li {
+  list-style: none;
+  font-family: "Jost", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: rgb(41, 38, 33);
+}
+header .headerTop .myWishlist {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+header .headerTop .myWishlist ul {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .headerTop .myWishlist ul li {
+  width: 45%;
+  border-right: 1px solid rgba(128, 128, 128, 0.211);
+  list-style: none;
+  font-family: "Jost", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: rgb(41, 38, 33);
+}
+header .headerTop .myWishlist .iconBox {
+  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .headerTop .myWishlist .iconBox i {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(41, 38, 33);
+}
+header .headerBottom {
+  border-top: 1px rgba(128, 128, 128, 0.199) solid;
+  height: 80px;
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .headerBottom .logo {
+  width: 18%;
+}
+header .headerBottom nav {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .headerBottom nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .headerBottom nav ul li {
+  list-style: none;
+  font-family: "Jost", sans-serif;
+}
+header .headerBottom nav ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: rgb(41, 38, 33);
+  transition: 1s;
+}
+header .headerBottom nav ul li a:hover {
+  cursor: pointer;
+  color: rgb(255, 32, 32);
+  transition: 1s;
+}
+header .headerBottom nav ul .dropDownFirst {
+  position: relative;
+  display: inline-block;
+}
+header .headerBottom nav ul .dropDownFirst .dropDownMenu {
+  width: 23vh;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: white;
+  border-top: rgb(255, 32, 32);
+  color: rgb(41, 38, 33);
+  display: none;
+}
+header .headerBottom nav ul .dropDownFirst .dropDownMenu:hover {
+  color: rgb(255, 32, 32);
+}
+header .headerBottom nav ul .dropDownFirst:hover .dropDownMenu {
+  position: absolute;
+  top: 20px;
+  display: block;
+}
+header .headerBottom nav ul .dropDownSecond {
+  position: relative;
+  transition: 2s;
+  display: inline-block;
+}
+header .headerBottom nav ul .dropDownSecond .dropDownMenu {
+  width: 18vh;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: white;
+  border-top: rgb(255, 32, 32);
+  color: rgb(41, 38, 33);
+  display: none;
+}
+header .headerBottom nav ul .dropDownSecond .dropDownMenu:hover {
+  color: rgb(255, 32, 32);
+}
+header .headerBottom nav ul .dropDownSecond:hover .dropDownMenu {
+  transition: 2s;
+  position: absolute;
+  top: 20px;
+  display: block;
+}
+header .headerBottom .iconBox {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+header .headerBottom .iconBox i {
+  width: 95%;
+  font-size: 24px;
+  color: rgb(41, 38, 33);
+  transition: 1s;
+}
+header .headerBottom .iconBox i:hover {
+  color: rgb(255, 32, 32);
+  transition: 1s;
+  cursor: pointer;
+}
+header .headerBottom .iconBox .fa-cart-shopping {
+  position: relative;
+}
+header .headerBottom .iconBox .fa-cart-shopping div {
+  position: absolute;
+  bottom: 19px;
+  left: 19px;
+  width: 70%;
+  height: 18px;
+  font-size: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+}
+
+#shopNow {
+  background-color: rgb(3, 0, 17);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+}
+#shopNow .menuBar {
+  display: none;
+}
+#shopNow h5 {
+  width: 37%;
+  color: white;
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-around;
+}
+#shopNow h5 p {
+  border-bottom: 2px rgb(206, 189, 156) solid;
+  color: rgb(206, 189, 156);
+  transition: 1s;
+}
+#shopNow h5 p:hover {
+  cursor: pointer;
+  font-weight: 500;
+  transition: 1s;
+}
+
+#fashionSaleSec {
+  background-image: url("/assets/image/h1_hero2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 105vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#fashionSaleSec .fashionSale {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+}
+#fashionSaleSec .fashionSale span {
+  font-family: "Clicker Script", cursive;
+  font-size: 50px;
+  font-weight: 400;
+  color: rgb(255, 32, 32);
+}
+#fashionSaleSec .fashionSale h1 {
+  font-family: "Jost", sans-serif;
+  font-size: 55px;
+  font-weight: 500;
+  color: rgb(41, 38, 33);
+}
+#fashionSaleSec .fashionSale p {
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: rgb(116, 112, 107);
+  width: 70%;
+}
+#fashionSaleSec .fashionSale button {
+  color: white;
+  background-color: rgb(41, 38, 33);
+  font-size: 14px;
+  font-weight: 700;
+  border: 1px rgb(41, 38, 33) solid;
+  padding: 15px 40px;
+  transition: 1s;
+}
+#fashionSaleSec .fashionSale button:hover {
+  background-color: white;
+  border: 1px black solid;
+  color: black;
+  font-size: 14px;
+  font-weight: 400;
+  transition: 1s;
+  cursor: pointer;
+}
+
+#fashionSec {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#fashionSec .container {
+  margin: 30px;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#fashionSec .container .fashionCards {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#fashionSec .container .fashionCards .fashionCard {
+  width: 33%;
+  text-align: center;
+  position: relative;
+}
+#fashionSec .container .fashionCards .fashionCard img {
+  width: 95%;
+  position: relative;
+}
+#fashionSec .container .fashionCards .fashionCard p {
+  position: relative;
+  bottom: 60px;
+  font-size: 24px;
+  font-weight: 600;
+  color: rgb(226, 226, 226);
+}
+
+#trendingSec {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px;
+}
+#trendingSec .container {
+  width: 90%;
+  margin: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 30px;
+}
+#trendingSec .container .trendingText {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px rgba(128, 128, 128, 0.118) solid;
+}
+#trendingSec .container .trendingText h2 {
+  color: rgb(41, 38, 33);
+  font-size: 34px;
+  font-weight: 500;
+}
+#trendingSec .container .trendingText nav {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#trendingSec .container .trendingText nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#trendingSec .container .trendingText nav ul li {
+  color: rgb(41, 38, 33);
+  font-size: 16px;
+  font-weight: 500;
+  list-style: none;
+  transition: 1s;
+}
+#trendingSec .container .trendingText nav ul li:hover {
+  transition: 1s;
+  border-bottom: 4px rgb(255, 32, 32) solid;
+}
+#trendingSec .container .trendingText nav ul .womensMenu {
+  border-bottom: 4px rgb(255, 32, 32) solid;
+}
+#trendingSec .container .trendingCards {
+  width: 99%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#trendingSec .container .trendingCards .trendingCard {
+  width: 23%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+#trendingSec .container .trendingCards .trendingCard img {
+  width: 100%;
+}
+#trendingSec .container .trendingCards .trendingCard img:hover {
+  cursor: pointer;
+}
+#trendingSec .container .trendingCards .trendingCard p {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: 1s;
+}
+#trendingSec .container .trendingCards .trendingCard p span {
+  color: gray;
+}
+#trendingSec .container .trendingCards .trendingCard p span del {
+  color: rgb(206, 189, 156);
+}
+#trendingSec .container .trendingCards .trendingCard p:hover {
+  transition: 1s;
+  cursor: pointer;
+  color: rgb(255, 32, 32);
+}
+#trendingSec .container .trendingCards .trendingCard p:hover span {
+  color: rgb(41, 38, 33);
+}
+
+#customerTestimonial {
+  background-color: #f3ead8;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#customerTestimonial .container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+#customerTestimonial .container .customerText {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#customerTestimonial .container .customerText h3 {
+  font-size: 34px;
+  font-weight: 500;
+  color: rgb(41, 38, 33);
+}
+#customerTestimonial .container .customerText p {
+  font-size: 22px;
+  font-weight: 400;
+  color: rgb(41, 38, 33);
+}
+#customerTestimonial .container .customerProfile {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#customerTestimonial .container .customerProfile .customerProfileText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#customerTestimonial .container .customerProfile .customerProfileText h6 {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(41, 38, 33);
+}
+#customerTestimonial .container .customerProfile .customerProfileText p {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(116, 112, 107);
+}
+
+#youMayLikeSec {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0px;
+}
+#youMayLikeSec .container {
+  width: 90%;
+  margin: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 30px;
+}
+#youMayLikeSec .container .youMayLikeText {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#youMayLikeSec .container .youMayLikeText h2 {
+  color: rgb(41, 38, 33);
+  font-size: 34px;
+  font-weight: 500;
+}
+#youMayLikeSec .youMayLikeCards {
+  width: 99%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#youMayLikeSec .youMayLikeCards .youMayLikeCard {
+  width: 23%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+#youMayLikeSec .youMayLikeCards .youMayLikeCard img {
+  width: 100%;
+}
+#youMayLikeSec .youMayLikeCards .youMayLikeCard img:hover {
+  cursor: pointer;
+}
+#youMayLikeSec .youMayLikeCards .youMayLikeCard p {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: 1s;
+}
+#youMayLikeSec .youMayLikeCards .youMayLikeCard p span {
+  color: gray;
+}
+#youMayLikeSec .youMayLikeCards .youMayLikeCard p span del {
+  color: rgb(206, 189, 156);
+}
+#youMayLikeSec .youMayLikeCards .youMayLikeCard p:hover {
+  transition: 1s;
+  cursor: pointer;
+  color: rgb(255, 32, 32);
+}
+#youMayLikeSec .youMayLikeCards .youMayLikeCard p:hover span {
+  color: rgb(41, 38, 33);
+}
+
+#latestNews {
+  background-color: rgba(237, 237, 237, 0.723);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#latestNews .container {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+  margin: 40px 0px;
+}
+#latestNews .container .latestNewsText {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#latestNews .container .latestNewsText h1 {
+  font-size: 34px;
+  font-weight: 500;
+  color: rgb(41, 38, 33);
+}
+#latestNews .container .latestNewsCards {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#latestNews .container .latestNewsCards .latestNewsCard {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+#latestNews .container .latestNewsCards .latestNewsCard .cardImg {
+  width: 100%;
+}
+#latestNews .container .latestNewsCards .latestNewsCard .cardImg img {
+  width: 100%;
+}
+#latestNews .container .latestNewsCards .latestNewsCard .cardText {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#latestNews .container .latestNewsCards .latestNewsCard .cardText p {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(116, 112, 107);
+}
+#latestNews .container .latestNewsCards .latestNewsCard .cardText h3 {
+  font-size: 22px;
+  font-weight: 500;
+  color: rgb(41, 38, 33);
+  transition: 1s;
+}
+#latestNews .container .latestNewsCards .latestNewsCard .cardText h3:hover {
+  cursor: pointer;
+  color: rgb(255, 32, 32);
+  transition: 1s;
+}
+#latestNews .container .latestNewsCards .latestNewsCard .cardText h6 {
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(41, 38, 33);
+}
+#latestNews .container .latestNewsCards .latestNewsCard .cardText h6:hover {
+  cursor: pointer;
+}
+
+#onlineSupport {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#onlineSupport .container {
+  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 40px 0;
+}
+#onlineSupport .container .card {
+  width: 23%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+  border-right: 1px rgba(128, 128, 128, 0.196) solid;
+}
+#onlineSupport .container .card i {
+  font-size: 40px;
+}
+#onlineSupport .container .card h5 {
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+}
+#onlineSupport .container .card p {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(41, 38, 33);
+}
+
+footer {
+  width: 100%;
+  background-color: #171613;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .container {
+  width: 85%;
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .container .footerTop {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px;
+}
+footer .container .footerTop .subscribeText {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .container .footerTop .subscribeText h4 {
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+}
+footer .container .footerTop .subscribeText p {
+  font-size: 15px;
+  font-weight: 400;
+  color: white;
+}
+footer .container .footerTop .subscribeInp {
+  width: 45%;
+  display: flex;
+  justify-content: space-around;
+}
+footer .container .footerTop .subscribeInp input {
+  width: 60%;
+  outline: none;
+  border: none;
+  height: 60px;
+}
+footer .container .footerTop .subscribeInp input input::placeholder {
+  width: 85%;
+  font-size: 22px;
+  font-weight: 400;
+}
+footer .container .footerTop .subscribeInp button {
+  width: 30%;
+  border: none;
+  background-color: rgb(255, 32, 32);
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+}
+footer .container .footerTop .subscribeInp button:hover {
+  cursor: pointer;
+}
+footer .container .footerTop .subscribeIcon {
+  width: 10%;
+  display: flex;
+  gap: 15px;
+}
+footer .container .footerTop .subscribeIcon i {
+  font-size: 24px;
+  color: rgb(84, 90, 104);
+  transition: 1s;
+}
+footer .container .footerTop .subscribeIcon i:hover {
+  transition: 1s;
+  cursor: pointer;
+  color: rgb(255, 32, 32);
+}
+footer .container .footerMedium {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 40px;
+}
+footer .container .footerMedium .logo {
+  width: 15%;
+}
+footer .container .footerMedium .logo:hover {
+  cursor: pointer;
+}
+footer .container .footerMedium .logo img {
+  width: 100%;
+}
+footer .container .footerMedium .footerMediumText {
+  width: 12%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .container .footerMedium .footerMediumText h5 {
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+}
+footer .container .footerMedium .footerMediumText ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+footer .container .footerMedium .footerMediumText ul li {
+  list-style: none;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(187, 185, 181);
+}
+footer .container .footerMedium .footerMediumText ul li:hover {
+  cursor: pointer;
+  font-weight: 500;
+}
+footer .container .footerBottom {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+}
+footer .container .footerBottom h5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 50%;
+  color: rgb(187, 185, 181);
+  font-size: 16px;
+  font-weight: 300;
+}
+footer .container .footerBottom h5 p {
+  color: rgb(255, 32, 32);
+}
+
+@media screen and (min-width: 300px) and (max-width: 576px) {
+  header .headerTop {
+    display: none;
+  }
+  header .headerBottom {
+    width: 90%;
+  }
+  header .headerBottom .logo {
+    width: 40%;
+  }
+  header .headerBottom .logo img {
+    width: 80%;
+  }
+  header .headerBottom nav {
+    display: none;
+  }
+  header .headerBottom .iconBox {
+    width: 20%;
+  }
+  header .headerBottom .iconBox i {
+    width: 80%;
+    font-size: 15px;
+  }
+  #shopNow {
+    width: 100%;
+    background-color: gray;
+  }
+  #shopNow h5 {
+    display: none;
+  }
+  #shopNow .menuBar {
+    width: 95%;
+    height: 100%;
+    display: block;
+    display: flex;
+    justify-content: flex-end;
+  }
+  #shopNow .menuBar p {
+    font-size: 20px;
+    color: rgb(41, 38, 33);
+  }
+  #fashionSaleSec {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #fashionSaleSec .fashionSale {
+    width: 100%;
+  }
+  #fashionSaleSec .fashionSale span {
+    font-size: 56px;
+    font-weight: 400;
+  }
+  #fashionSaleSec .fashionSale h1 {
+    font-size: 28px;
+    font-weight: 500;
+  }
+  #fashionSaleSec .fashionSale p {
+    font-size: 15px;
+    font-weight: 400;
+    width: 100%;
+  }
+  #fashionSaleSec .fashionSale button {
+    color: white;
+    background-color: rgb(41, 38, 33);
+    font-size: 14px;
+    font-weight: 700;
+    border: 1px rgb(41, 38, 33) solid;
+    padding: 15px 40px;
+    transition: 1s;
+  }
+  #fashionSaleSec .fashionSale button:hover {
+    background-color: white;
+    border: 1px black solid;
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
+    transition: 1s;
+    cursor: pointer;
+  }
+  #fashionSec {
+    width: 100%;
+  }
+  #fashionSec .container {
+    width: 100%;
+  }
+  #fashionSec .container .fashionCards {
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #fashionSec .container .fashionCards .fashionCard {
+    width: 100%;
+  }
+  #fashionSec .container .fashionCards .fashionCard img {
+    width: 100%;
+  }
+  #fashionSec .container .fashionCards .fashionCard p {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  #trendingSec {
+    width: 100%;
+  }
+  #trendingSec .container {
+    width: 95%;
+  }
+  #trendingSec .container .trendingText {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+  }
+  #trendingSec .container .trendingText h2 {
+    width: 40%;
+    font-size: 25px;
+    font-weight: 500;
+  }
+  #trendingSec .container .trendingText nav {
+    width: 55%;
+  }
+  #trendingSec .container .trendingText nav ul li {
+    font-size: 13px;
+  }
+  #trendingSec .container .trendingCards {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #trendingSec .container .trendingCards .trendingCard {
+    width: 100%;
+  }
+  #trendingSec .container .trendingCards .trendingCard img {
+    width: 100%;
+  }
+  #customerTestimonial {
+    width: 100%;
+  }
+  #customerTestimonial .container {
+    width: 95%;
+  }
+  #customerTestimonial .container .customerText {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  #customerTestimonial .container .customerText h3 {
+    font-size: 29px;
+  }
+  #customerTestimonial .container .customerText p {
+    font-size: 15px;
+  }
+  #customerTestimonial .container .customerProfile {
+    width: 50%;
+  }
+  #customerTestimonial .container .customerProfile .customerProfileText h6 {
+    font-size: 26px;
+  }
+  #youMayLikeSec {
+    width: 100%;
+  }
+  #youMayLikeSec .container {
+    width: 95%;
+  }
+  #youMayLikeSec .container .youMayLikeText {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+  }
+  #youMayLikeSec .container .youMayLikeText h2 {
+    width: 40%;
+    font-size: 25px;
+    font-weight: 500;
+  }
+  #youMayLikeSec .container .youMayLikeCards {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #youMayLikeSec .container .youMayLikeCards .youMayLikeCard {
+    width: 100%;
+  }
+  #youMayLikeSec .container .youMayLikeCards .youMayLikeCard img {
+    width: 100%;
+  }
+  #latestNews .container {
+    width: 95%;
+  }
+  #latestNews .container .latestNewsText h1 {
+    font-size: 24px;
+  }
+  #latestNews .container .latestNewsCards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  #latestNews .container .latestNewsCards .latestNewsCard {
+    width: 90%;
+  }
+  #latestNews .container .latestNewsCards .latestNewsCard .cardImg {
+    width: 100%;
+  }
+  #latestNews .container .latestNewsCards .latestNewsCard .cardImg img {
+    width: 100%;
+  }
+  #onlineSupport {
+    width: 100%;
+  }
+  #onlineSupport .container {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  #onlineSupport .container .card {
+    width: 100%;
+    border-right: none;
+  }
+  footer {
+    width: 100%;
+  }
+  footer .container {
+    width: 95%;
+  }
+  footer .container .footerTop {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  footer .container .footerTop .subscribeText {
+    width: 90%;
+  }
+  footer .container .footerTop .subscribeInp {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 15px;
+  }
+  footer .container .footerTop .subscribeInp input {
+    width: 100%;
+  }
+  footer .container .footerTop .subscribeInp button {
+    width: 100%;
+    padding: 20px 0;
+  }
+  footer .container .footerTop .subscribeIcon {
+    width: 90%;
+    display: flex;
+    gap: 15px;
+  }
+  footer .container .footerMedium {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  footer .container .footerMedium .logo {
+    width: 50%;
+  }
+  footer .container .footerMedium .footerMediumText {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  footer .container .footerBottom {
+    border-top: 1px rgba(128, 128, 128, 0.308) solid;
+    width: 100%;
+    margin: 30px;
+  }
+  footer .container .footerBottom h5 {
+    width: 90%;
+    display: flex;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 920px) {
+  header .headerTop {
+    display: none;
+  }
+  header .headerBottom {
+    width: 90%;
+  }
+  header .headerBottom nav {
+    display: none;
+  }
+  header .headerBottom .iconBox i {
+    font-size: 20px;
+  }
+  #shopNow {
+    width: 100%;
+    background-color: gray;
+  }
+  #shopNow h5 {
+    display: none;
+  }
+  #shopNow .menuBar {
+    width: 95%;
+    height: 100%;
+    display: block;
+    display: flex;
+    justify-content: flex-end;
+  }
+  #shopNow .menuBar p {
+    font-size: 20px;
+    color: rgb(41, 38, 33);
+  }
+  #fashionSaleSec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #fashionSaleSec .fashionSale {
+    width: 60%;
+  }
+  #fashionSaleSec .fashionSale span {
+    font-size: 56px;
+    font-weight: 400;
+  }
+  #fashionSaleSec .fashionSale h1 {
+    font-size: 28px;
+    font-weight: 500;
+  }
+  #fashionSaleSec .fashionSale p {
+    font-size: 15px;
+    font-weight: 400;
+    width: 100%;
+  }
+  #fashionSaleSec .fashionSale button {
+    color: white;
+    background-color: rgb(41, 38, 33);
+    font-size: 14px;
+    font-weight: 700;
+    border: 1px rgb(41, 38, 33) solid;
+    padding: 15px 40px;
+    transition: 1s;
+  }
+  #fashionSaleSec .fashionSale button:hover {
+    background-color: white;
+    border: 1px black solid;
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
+    transition: 1s;
+    cursor: pointer;
+  }
+  #fashionSec {
+    width: 100%;
+  }
+  #fashionSec .container {
+    width: 95%;
+  }
+  #fashionSec .container .fashionCards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #fashionSec .container .fashionCards .fashionCard {
+    width: 45%;
+  }
+  #fashionSec .container .fashionCards .fashionCard img {
+    width: 100%;
+  }
+  #fashionSec .container .fashionCards .fashionCard p {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  #trendingSec {
+    width: 100%;
+  }
+  #trendingSec .container {
+    width: 95%;
+  }
+  #trendingSec .container .trendingText {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+  }
+  #trendingSec .container .trendingText h2 {
+    width: 50%;
+    font-size: 30px;
+    font-weight: 500;
+  }
+  #trendingSec .container .trendingText nav {
+    width: 40%;
+  }
+  #trendingSec .container .trendingText nav ul li {
+    font-size: 16px;
+  }
+  #trendingSec .container .trendingCards {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #trendingSec .container .trendingCards .trendingCard {
+    width: 45%;
+  }
+  #trendingSec .container .trendingCards .trendingCard img {
+    width: 100%;
+  }
+  #customerTestimonial {
+    width: 100%;
+  }
+  #customerTestimonial .container {
+    width: 95%;
+  }
+  #customerTestimonial .container .customerText {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  #customerTestimonial .container .customerText h3 {
+    font-size: 34px;
+  }
+  #customerTestimonial .container .customerText p {
+    font-size: 18px;
+  }
+  #youMayLikeSec {
+    width: 100%;
+  }
+  #youMayLikeSec .container {
+    width: 95%;
+  }
+  #youMayLikeSec .container .youMayLikeText {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+  }
+  #youMayLikeSec .container .youMayLikeText h2 {
+    width: 90%;
+    font-size: 30px;
+    font-weight: 500;
+  }
+  #youMayLikeSec .container .youMayLikeCards {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #youMayLikeSec .container .youMayLikeCards .youMayLikeCard {
+    width: 45%;
+  }
+  #youMayLikeSec .container .youMayLikeCards .youMayLikeCard img {
+    width: 100%;
+  }
+  #latestNews .container {
+    width: 95%;
+  }
+  #latestNews .container .latestNewsText h1 {
+    font-size: 28px;
+  }
+  #latestNews .container .latestNewsCards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+  #latestNews .container .latestNewsCards .latestNewsCard {
+    width: 48%;
+  }
+  #latestNews .container .latestNewsCards .latestNewsCard .cardImg {
+    width: 100%;
+  }
+  #latestNews .container .latestNewsCards .latestNewsCard .cardImg img {
+    width: 100%;
+  }
+  #onlineSupport {
+    width: 100%;
+  }
+  #onlineSupport .container {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  #onlineSupport .container .card {
+    width: 45%;
+    border-right: none;
+  }
+  footer {
+    width: 100%;
+  }
+  footer .container {
+    width: 85%;
+  }
+  footer .container .footerTop {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  footer .container .footerTop .subscribeText {
+    width: 90%;
+  }
+  footer .container .footerTop .subscribeInp {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+  }
+  footer .container .footerTop .subscribeInp input {
+    width: 55%;
+  }
+  footer .container .footerTop .subscribeInp button {
+    width: 40%;
+    padding: 20px 0;
+  }
+  footer .container .footerTop .subscribeIcon {
+    width: 90%;
+    display: flex;
+    gap: 15px;
+  }
+  footer .container .footerMedium {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  footer .container .footerMedium .logo {
+    width: 40%;
+  }
+  footer .container .footerMedium .footerMediumText {
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  footer .container .footerBottom {
+    width: 100%;
+    margin: 30px;
+  }
+  footer .container .footerBottom h5 {
+    width: 90%;
+    display: flex;
+  }
+}

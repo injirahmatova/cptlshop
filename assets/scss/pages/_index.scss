@@ -1,0 +1,1347 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .headerTop{
+        width: 85%;
+        height: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .aboutUs{
+            width: 22%;
+            ul{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                li{
+                    list-style: none;
+                    font-family: 'Jost',sans-serif;
+                    font-size: 13px;
+                    font-weight: 400;
+                    color: rgb(41, 38, 33);
+                }
+            }
+        }
+        .myWishlist{
+            width: 30%;
+            display: flex;
+            justify-content: space-between;
+
+            ul{
+                width: 60%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                li{
+                    width: 45%;
+                    border-right: 1px solid rgba(128, 128, 128, 0.211);
+                    list-style: none;
+                    font-family: 'Jost',sans-serif;
+                    font-size: 13px;
+                    font-weight: 400;
+                    color: rgb(41, 38, 33);
+                }
+            }
+            .iconBox{
+                width: 35%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                i{
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: rgb(41, 38, 33);
+                }
+            }
+        }
+    }
+    .headerBottom{
+        border-top: 1px rgba(128, 128, 128, 0.199) solid;
+        height: 80px;
+        width: 85%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo{
+            width: 18%;
+        }
+        nav{
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            ul{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                li{
+                    list-style: none;
+                    font-family: 'Jost',sans-serif;
+                    a{
+                        text-decoration: none;
+                        font-size: 16px;
+                        font-weight: 600;
+                        line-height: 24px;
+                        color: rgb(41, 38, 33);
+                        transition: 1s;
+                        &:hover{
+                            cursor: pointer;
+                            color: rgb(255, 32, 32);
+                            transition: 1s;
+                        }
+                    }
+                }
+                .dropDownFirst{
+                    position: relative;
+                    display: inline-block;
+                    .dropDownMenu{
+                        width: 23vh;
+                        padding: 10px;
+                        font-size: 16px;
+                        font-weight: 600;
+                        background-color: white;
+                        border-top: rgb(255, 32, 32);
+                        color: rgb(41, 38, 33);
+                        display: none;
+                        &:hover{
+                            color: rgb(255, 32, 32);
+                        }
+                    }
+                    &:hover .dropDownMenu{
+                        position: absolute;
+                        top: 20px;
+                        display: block;
+                    }
+                }
+                .dropDownSecond{
+                    position: relative;
+                    transition: 2s;
+                    display: inline-block;
+                    .dropDownMenu{
+                        width: 18vh;
+                        padding: 10px;
+                        font-size: 16px;
+                        font-weight: 600;
+                        background-color: white;
+                        border-top: rgb(255, 32, 32);
+                        color: rgb(41, 38, 33);
+                        display: none;
+                        &:hover{
+                            color: rgb(255, 32, 32);
+                        }
+                    }
+                    &:hover .dropDownMenu{
+                        transition: 2s;
+                        position: absolute;
+                        top: 20px;
+                        display: block;
+                    }
+                }
+            }
+        }
+        .iconBox{
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            i{
+                width: 95%;
+                font-size: 24px;
+                color: rgb(41, 38, 33);
+                transition: 1s;
+                &:hover{
+                    color: rgb(255, 32, 32);
+                    transition: 1s;
+                    cursor: pointer;
+                }
+            }
+            .fa-cart-shopping{
+                position: relative;
+                div{
+                    position: absolute;
+                    bottom: 19px;
+                    left: 19px;
+                    width: 70%;
+                    height: 18px;
+                    font-size: 8px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: red;
+                    color: white;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}
+#shopNow{
+    background-color: rgb(3, 0, 17);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    .menuBar{
+        display: none;
+    }
+    h5{
+        width: 37%;
+        color: white;
+
+        font-family: 'Jost',sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        display: flex;
+        justify-content: space-around;
+        p{
+            border-bottom: 2px rgb(206, 189, 156) solid;
+            color: rgb(206, 189, 156);
+            transition: 1s;
+            &:hover{
+                cursor: pointer;
+                font-weight: 500;   
+                transition: 1s;
+            }
+        }
+    }
+}
+#fashionSaleSec{
+    background-image: url('/assets/image/h1_hero2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 105vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    .fashionSale{
+        width: 50%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+        span{
+            font-family: 'Clicker Script', cursive;
+            font-size: 50px;
+            font-weight: 400;
+            color: rgb(255, 32, 32);
+        }
+        h1{
+            font-family: 'Jost', sans-serif;
+            font-size: 55px;
+            font-weight: 500;
+            color: rgb(41, 38, 33);
+        }
+        p{
+            font-family: 'Jost',sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            color: rgb(116, 112, 107);
+            width: 70%;
+        }
+        button{
+            color: white;
+            background-color: rgb(41, 38, 33);
+            font-size: 14px;
+            font-weight: 700;
+            border: 1px rgb(41, 38, 33) solid;
+            padding: 15px 40px;
+            transition: 1s;
+            &:hover{
+                background-color: white;
+                border: 1px black solid;
+                color: black;
+                font-size: 14px;
+                font-weight: 400;
+                transition: 1s;
+                cursor: pointer;
+            }
+        }
+        
+    }
+}
+#fashionSec{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container{
+        margin: 30px;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .fashionCards{  
+            margin: auto;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            .fashionCard{
+                width: 33%;
+                text-align: center;
+                position: relative;
+                img{
+                    width: 95%;
+                    position: relative;
+                }
+                p{
+                    position: relative;
+                    bottom: 60px;
+                    font-size: 24px;
+                    font-weight: 600;
+                    color: rgb(226, 226, 226);
+                }
+            }
+        }
+    } 
+}
+#trendingSec{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    .container{
+        width: 90%;
+        margin: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 30px;
+        .trendingText{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px rgba(128, 128, 128, 0.118) solid;
+            h2{
+                color: rgb(41, 38, 33);
+                font-size: 34px;
+                font-weight: 500;
+            }
+            nav{
+                width: 20%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                ul{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    li{
+                        color: rgb(41, 38, 33);
+                        font-size: 16px;
+                        font-weight: 500;
+                        list-style: none;
+                        transition: 1s;
+                        &:hover{
+                            transition: 1s;
+                            border-bottom: 4px rgb(255, 32, 32) solid;
+                        }
+                    }
+                    .womensMenu{
+                        border-bottom: 4px rgb(255, 32, 32) solid;
+                    }
+                }
+            }
+        }
+        .trendingCards{
+            width: 99%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .trendingCard{
+                width: 23%;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                img{
+                    width: 100%;
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+                p{
+                    font-size: 16px;
+                    font-weight: 400;
+                    font-style: normal;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+                    transition: 1s;
+                    span{
+                        color: gray;
+                    }
+                    span del{
+                        color: rgb(206, 189, 156);
+                    }
+                    &:hover{
+                        transition: 1s;
+                        cursor: pointer;
+                        color: rgb(255, 32, 32);
+                        span{
+                            color: rgb(41, 38, 33);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+#customerTestimonial{
+    background-color: #f3ead8;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        .customerText{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            h3{
+                font-size: 34px;
+                font-weight: 500;
+                color: rgb(41, 38, 33);
+            }
+            p{
+                font-size: 22px;
+                font-weight: 400;
+                color: rgb(41, 38, 33);
+            }
+        }
+        .customerProfile{
+            width: 30%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .customerProfileText{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                h6{
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: rgb(41, 38, 33);
+                }
+                p{
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: rgb(116, 112, 107);
+                }
+            }
+        }
+    }
+}
+#youMayLikeSec{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0px;
+    .container{
+        width: 90%;
+        margin: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 30px;
+        .youMayLikeText{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            h2{
+                color: rgb(41, 38, 33);
+                font-size: 34px;
+                font-weight: 500;
+            }
+        }
+    }
+        .youMayLikeCards{
+            width: 99%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .youMayLikeCard{
+                width: 23%;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                img{
+                    width: 100%;
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+                p{
+                    font-size: 16px;
+                    font-weight: 400;
+                    font-style: normal;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+                    transition: 1s;
+                    span{
+                        color: gray;
+                    }
+                    span del{
+                        color: rgb(206, 189, 156);
+                    }
+                    &:hover{
+                        transition: 1s;
+                        cursor: pointer;
+                        color: rgb(255, 32, 32);
+                        span{
+                            color: rgb(41, 38, 33);
+                        }
+                    }
+                }
+            }
+        }
+    }   
+ 
+ #latestNews{
+    background-color: rgba(237, 237, 237, 0.723);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container{
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 30px;
+        margin: 40px 0px;
+        .latestNewsText{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            h1{
+                font-size: 34px;
+                font-weight: 500;
+                color: rgb(41, 38, 33);
+            }
+        }
+        .latestNewsCards{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .latestNewsCard{
+                width: 30%;
+                display: flex;
+                flex-direction: column;
+                .cardImg{
+                    width: 100%;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .cardText{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    p{
+                        font-size: 16px;
+                        font-weight: 400;
+                        color: rgb(116, 112, 107);
+                    }
+                    h3{
+                        font-size: 22px;
+                        font-weight: 500;
+                        color: rgb(41, 38, 33);
+                        transition: 1s;
+                        &:hover{
+                            cursor: pointer;
+                            color: rgb(255, 32, 32);
+                            transition: 1s;
+                        }
+                    }
+                    h6{
+                        font-size: 16px;
+                        font-weight: 600;
+                        color: rgb(41, 38, 33);
+                        &:hover{
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#onlineSupport{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container{
+        width: 90%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 40px 0;
+        .card{
+            width: 23%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            gap: 10px;
+            border-right: 1px rgba(128, 128, 128, 0.196) solid;
+            i{
+                font-size: 40px;
+            }
+            h5{
+                font-size: 20px;
+                font-weight: 500;
+                color: black;
+            }
+            p{
+                font-size: 16px;
+                font-weight: 400;
+                color: rgb(41, 38, 33);
+            }
+        }
+    }
+}
+footer{
+    width: 100%;
+    background-color: #171613;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container{
+        width: 85%;
+        margin: 30px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        .footerTop{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 30px;
+            
+            .subscribeText{
+                width: 30%;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                h4{
+                    font-size: 24px;
+                    font-weight: 500;
+                    color: white;
+                }
+                p{
+                    font-size: 15px;
+                    font-weight: 400;
+                    color: white;
+                }
+            }
+            .subscribeInp{
+                width: 45%;
+                display: flex;
+                justify-content: space-around;
+                input{
+                    width: 60%;
+                    outline: none;
+                    border: none;
+                    height: 60px;
+                    input::placeholder{
+                        width: 85%;
+                        font-size: 22px;
+                        font-weight: 400;
+                    }
+                }
+                button{
+                    width: 30%;
+                    border: none;
+                    background-color: rgb(255, 32, 32);
+                    color: white;
+                    font-size: 16px;
+                    font-weight: 500;
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+            }
+            .subscribeIcon{
+                width: 10%;
+                display: flex;
+                gap: 15px;
+                i{
+                    font-size: 24px;
+                    color: rgb(84, 90, 104);
+                    transition: 1s;
+                    &:hover{
+                        transition: 1s;
+                        cursor: pointer;
+                        color: rgb(255, 32, 32);
+                    }
+                }
+            }
+        }
+        .footerMedium{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin: 40px;
+            .logo{
+                width: 15%;
+                &:hover{
+                    cursor: pointer;
+                }
+                img{
+                    width: 100%;
+                }
+            }
+            .footerMediumText{
+                width: 12%;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                h5{
+                    color: white;
+                    font-size: 18px;
+                    font-weight: 400;
+                }
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                    li{
+                        list-style: none;
+                        font-size: 16px;
+                        font-weight: 400;
+                        color: rgb(187, 185, 181);
+                        &:hover{
+                            cursor: pointer;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+        }
+        .footerBottom{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 30px;
+            h5{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 5px;
+                width:50%;
+                color: rgb(187, 185, 181);
+                font-size: 16px;
+                font-weight: 300;
+                p{
+                    color: rgb(255, 32, 32);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 576px){
+    header{
+        .headerTop{
+            display: none;
+        }
+        .headerBottom{
+            width: 90%;
+            .logo{
+                width: 40%;
+                img{
+                    width: 80%;
+                }
+            }
+            nav{
+                display: none;
+            }
+            .iconBox{
+                width: 20%;
+                i{
+                    width: 80%;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    
+    #shopNow{
+        width: 100%;
+        background-color: gray;
+        h5{
+            display: none;
+        }
+        .menuBar{
+            width: 95%;
+            height: 100%;
+            display: block;
+            display: flex;
+            justify-content: flex-end;
+            p{
+                font-size: 20px;
+                color: rgb(41, 38, 33);
+            }
+        }
+    }
+    #fashionSaleSec{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .fashionSale{
+            width: 100%;
+            span{
+                font-size: 56px;
+                font-weight: 400;
+            }
+            h1{
+                font-size: 28px;
+                font-weight: 500;
+            }
+            p{
+                font-size: 15px;
+                font-weight: 400;
+                width: 100%;
+            }
+            button{
+                color: white;
+                background-color: rgb(41, 38, 33);
+                font-size: 14px;
+                font-weight: 700;
+                border: 1px rgb(41, 38, 33) solid;
+                padding: 15px 40px;
+                transition: 1s;
+                &:hover{
+                    background-color: white;
+                    border: 1px black solid;
+                    color: black;
+                    font-size: 14px;
+                    font-weight: 400;
+                    transition: 1s;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    #fashionSec{
+        width: 100%;
+        .container{
+            width: 100%;
+            .fashionCards{ 
+                width: 95%;
+                display: flex;
+                flex-wrap: wrap;
+                .fashionCard{
+                    width: 100%;
+                    img{
+                        width: 100%;
+                    }
+                    p{
+                        font-size: 18px;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+    #trendingSec{
+        width: 100%;
+        .container{
+            width: 95%;
+            .trendingText{
+                width: 90%;
+                display: flex;
+                justify-content: space-between;
+                h2{
+                    width: 40%;
+                    font-size: 25px;
+                    font-weight: 500;
+                }
+                nav{
+                    width: 55%;
+                    ul{
+                        li{
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+            .trendingCards{
+                width: 90%;
+                display: flex;
+                flex-wrap: wrap;
+                .trendingCard{
+                    width: 100%;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    #customerTestimonial{
+        width: 100%;
+        .container{
+            width: 95%;
+            .customerText{
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                h3{
+                    font-size: 29px;
+                }
+                p{
+                    font-size: 15px;
+                }
+            }
+            .customerProfile{
+                width: 50%;
+                .customerProfileText{
+                    h6{
+                        font-size: 26px;
+                    }
+                }
+            }
+        }
+    }
+    #youMayLikeSec{
+        width: 100%;
+        .container{
+            width: 95%;
+            .youMayLikeText{
+                width: 90%;
+                display: flex;
+                justify-content: center;
+                h2{
+                    width: 40%;
+                    font-size: 25px;
+                    font-weight: 500;
+                }
+            }
+            .youMayLikeCards{
+                width: 90%;
+                display: flex;
+                flex-wrap: wrap;
+                .youMayLikeCard{
+                    width: 100%;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    #latestNews{
+        .container{
+            width: 95%;
+            .latestNewsText{
+                h1{
+                    font-size: 24px;
+                }
+            }
+            .latestNewsCards{
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+                .latestNewsCard{
+                    width: 90%;
+                    .cardImg{
+                        width: 100%;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #onlineSupport{
+        width: 100%;
+        .container{
+            width: 90%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            .card{
+                width: 100%;
+                border-right: none;
+            }
+        }
+    }
+    footer{
+        width: 100%;
+        .container{
+            width: 95%;
+            .footerTop{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                gap: 20px;
+                .subscribeText{
+                   width: 90%;
+                }
+                .subscribeInp{
+                    width: 90%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    gap: 15px;
+                    input{
+                        width: 100%;
+                    }
+                    button{
+                        width: 100%;
+                       padding: 20px 0;
+                    }
+                }
+                .subscribeIcon{
+                    width: 90%;
+                    display: flex;
+                    gap: 15px;
+                }
+            }
+            .footerMedium{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                .logo{
+                    width: 50%;
+                }
+                .footerMediumText{
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                }
+            }
+            .footerBottom{
+                border-top: 1px rgba(128, 128, 128, 0.308) solid;
+                width: 100%;
+                margin: 30px;
+                h5{
+                    width: 90%;
+                    display: flex;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 920px){
+    header{
+        .headerTop{
+            display: none;
+        }
+        .headerBottom{
+            width: 90%;
+            nav{
+                display: none;
+            }
+            .iconBox{
+                i{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    #shopNow{
+        width: 100%;
+        background-color: gray;
+        h5{
+            display: none;
+        }
+        .menuBar{
+            width: 95%;
+            height: 100%;
+            display: block;
+            display: flex;
+            justify-content: flex-end;
+            p{
+                font-size: 20px;
+                color: rgb(41, 38, 33);
+            }
+        }
+    }
+    #fashionSaleSec{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .fashionSale{
+            width: 60%;
+            span{
+                font-size: 56px;
+                font-weight: 400;
+            }
+            h1{
+                font-size: 28px;
+                font-weight: 500;
+            }
+            p{
+                font-size: 15px;
+                font-weight: 400;
+                width: 100%;
+            }
+            button{
+                color: white;
+                background-color: rgb(41, 38, 33);
+                font-size: 14px;
+                font-weight: 700;
+                border: 1px rgb(41, 38, 33) solid;
+                padding: 15px 40px;
+                transition: 1s;
+                &:hover{
+                    background-color: white;
+                    border: 1px black solid;
+                    color: black;
+                    font-size: 14px;
+                    font-weight: 400;
+                    transition: 1s;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    #fashionSec{
+        width: 100%;
+        .container{
+            width: 95%;
+            .fashionCards{ 
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                .fashionCard{
+                    width: 45%;
+                    img{
+                        width: 100%;
+                    }
+                    p{
+                        font-size: 18px;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+    #trendingSec{
+        width: 100%;
+        .container{
+            width: 95%;
+            .trendingText{
+                width: 90%;
+                display: flex;
+                justify-content: space-between;
+                h2{
+                    width: 50%;
+                    font-size: 30px;
+                    font-weight: 500;
+                }
+                nav{
+                    width: 40%;
+                    ul{
+                        li{
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+            .trendingCards{
+                width: 90%;
+                display: flex;
+                flex-wrap: wrap;
+                .trendingCard{
+                    width: 45%;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    #customerTestimonial{
+        width: 100%;
+        .container{
+            width: 95%;
+            .customerText{
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                h3{
+                    font-size: 34px;
+                }
+                p{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    #youMayLikeSec{
+        width: 100%;
+        .container{
+            width: 95%;
+            .youMayLikeText{
+                width: 90%;
+                display: flex;
+                justify-content: center;
+                h2{
+                    width: 90%;
+                    font-size: 30px;
+                    font-weight: 500;
+                }
+            }
+            .youMayLikeCards{
+                width: 90%;
+                display: flex;
+                flex-wrap: wrap;
+                .youMayLikeCard{
+                    width: 45%;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    #latestNews{
+        .container{
+            width: 95%;
+            .latestNewsText{
+                h1{
+                    font-size: 28px;
+                }
+            }
+            .latestNewsCards{
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                gap: 20px;
+                .latestNewsCard{
+                    width: 48%;
+                    .cardImg{
+                        width: 100%;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #onlineSupport{
+        width: 100%;
+        .container{
+            width: 90%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            .card{
+                width: 45%;
+                border-right: none;
+            }
+        }
+    }
+    footer{
+        width: 100%;
+        .container{
+            width: 85%;
+            .footerTop{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                gap: 20px;
+                .subscribeText{
+                   width: 90%;
+                }
+                .subscribeInp{
+                    width: 90%;
+                    display: flex;
+                    justify-content: space-around;
+                    gap: 15px;
+                    input{
+                        width: 55%;
+                    }
+                    button{
+                        width: 40%;
+                       padding: 20px 0;
+                    }
+                }
+                .subscribeIcon{
+                    width: 90%;
+                    display: flex;
+                    gap: 15px;
+                }
+            }
+            .footerMedium{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                .logo{
+                    width: 40%;
+                }
+                .footerMediumText{
+                    width: 40%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 10px;
+                }
+            }
+            .footerBottom{
+                width: 100%;
+                margin: 30px;
+                h5{
+                    width: 90%;
+                    display: flex;
+                }
+            }
+        }
+    }
+}
